@@ -1,0 +1,7 @@
+/* Common */
+html{font-family:Helvetica,'Noto Sans KR',sans-serif;font-size:16px;color:#666;line-height:1.5rem}
+header,nav,article,section,footer,address,aside{display: block;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight:500}
+img,fieldset{border:0}
+ul,ol,menu{list-style:none}
+em,address,i{font-style:normal}

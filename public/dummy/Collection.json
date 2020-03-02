@@ -1,0 +1,68 @@
+[
+  {
+    "type": "Tblog",
+    "name": "Mheader",
+    "component": "",
+    "props": { 
+      "category": "카테고리",
+      "title": "타이틀 타이틀",
+      "content": "써머리가 들어갑니다.333"      
+    }
+  },
+  {
+    "type": "Tblog",
+    "name": "MsingleHor",
+    "component": "",
+    "props": { 
+      "image": "https://cdn.pixabay.com/photo/2015/06/19/17/58/sample-815141_960_720.jpg",
+      "title": "블로그 싱글아이템 가로형",
+      "content": "써머리가 많이 들어갑니다.777써머리가 많이 들어갑니다.777써머리가 많이 들어갑니다.777"      
+    }
+  },
+  {
+    "type": "Tcommon",
+    "name": "Mtextarea",
+    "component": "",
+    "props": { 
+      "content": "본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.<br/>본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다. 본문 내용입니다.본문 내용입니다.본문 내용입니다.<br/>본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다. 본문 내용입니다.본문 내용입니다.본문 내용입니다.<br/>본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다. 본문 내용입니다.본문 내용입니다.본문 내용입니다. "      
+    }
+  },
+  {
+    "type": "Tcommon",
+    "name": "Mbutton",
+    "component": "",
+    "props": { 
+      "href": "http://google.com",
+      "text": "자세히 보기"      
+    }
+  },
+  {
+    "type": "Tblog",
+    "name": "MsingleCrop",
+    "component": "",
+    "props": { 
+      "image": "http://topclass.chosun.com/news_img/1701/1701_078.jpg",
+      "title": "블로그 싱글아이템 크롭형",
+      "content": "블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형"      
+    }
+  },
+  {
+    "type": "Tblog",
+    "name": "MdoubleCrop",
+    "component": "",
+    "props": { 
+      "childs":[
+        {
+          "image": "http://topclass.chosun.com/news_img/1701/1701_078.jpg",
+          "title": "블로그 더블아이템  크롭형",
+          "content": "메타데이터1메타데이터1 메타데이터3메타데이터1메타데이터1 메타데이터3메타데이터1메타데이터1 메타데이터3 "
+        },
+        {
+          "image": "http://topclass.chosun.com/news_img/1701/1701_078.jpg",
+          "title": "블로그 더블아이템  크롭형",
+          "content": "메타데이터1메타데이터1메타데이터3"
+        }
+      ]
+     }
+  }
+]
