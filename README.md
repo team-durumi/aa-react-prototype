@@ -100,7 +100,7 @@
 
 ### src/views
 
-레이아웃의 Contents 영역에 렌더링 될 뷰페이지들
+레이아웃의 Contents 영역에 렌더링 될 뷰페이지들(아이템 콤포넌트의 컨테이너 역할)
 
 
 ### src/components
