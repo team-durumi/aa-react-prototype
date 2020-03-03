@@ -7,6 +7,8 @@
 ## Json데이터
 
 ### 포멧
+<pre>
+<code>
 [
   {
     "type": "컬렉션타입",
@@ -17,10 +19,15 @@
   },
   {}.....
 ]
+</code>
+</pre>
 <br /><br />
 
 ### 본 프로젝트에 사용된 더미 Json
 ./public/dummy/Collection.json<br />
+
+<pre>
+<code>
 [
   {
     "type": "Tblog",
@@ -83,7 +90,8 @@
      }
   }
 ]
-
+</code>
+</pre>
 ## 주요 디렉토리/파일 구조
 
 ### src/layouts
@@ -99,4 +107,4 @@
 
 view에서 비동기적으로 로드하여 렌더링하는 아이템 단위의 콤포넌트들
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
