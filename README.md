@@ -1,68 +1,110 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 프로젝트는 알콜아카이브 개발을 위한 주요 기능의 프로토타입 개발 버젼이며, react를 활용하여 개발하였습니다.
 
-## Available Scripts
+## 주요기능
 
-In the project directory, you can run:
+단일 컬렉션 뷰 페이지로써, json형식의 데이터에 기술된 아이템목록에 따라, 웹페이지에 렌더링해 줍니다.
 
-### `yarn start`
+## Json데이터
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 포멧
+<pre>
+<code>
+[
+  {
+    "type": "컬렉션타입",
+    "name": "아이템명",
+    "props": { 
+      아이템의 속성들...
+    }
+  },
+  {}.....
+]
+</code>
+</pre>
+<br /><br />
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### 본 프로젝트에 사용된 더미 Json
+./public/dummy/Collection.json<br />
 
-### `yarn test`
+<pre>
+<code>
+[
+  {
+    "type": "Tblog",
+    "name": "Mheader",
+    "props": { 
+      "category": "카테고리",
+      "title": "타이틀 타이틀",
+      "content": "써머리가 들어갑니다.333"      
+    }
+  },
+  {
+    "type": "Tblog",
+    "name": "MsingleHor",
+    "props": { 
+      "image": "https://cdn.pixabay.com/photo/2015/06/19/17/58/sample-815141_960_720.jpg",
+      "title": "블로그 싱글아이템 가로형",
+      "content": "써머리가 많이 들어갑니다.777써머리가 많이 들어갑니다.777써머리가 많이 들어갑니다.777"      
+    }
+  },
+  {
+    "type": "Tcommon",
+    "name": "Mtextarea",
+    "props": { 
+      "content": "본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.<br/>본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다. 본문 내용입니다.본문 내용입니다.본문 내용입니다.<br/>본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다. 본문 내용입니다.본문 내용입니다.본문 내용입니다.<br/>본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다.본문 내용입니다. 본문 내용입니다.본문 내용입니다.본문 내용입니다. "      
+    }
+  },
+  {
+    "type": "Tcommon",
+    "name": "Mbutton",
+    "props": { 
+      "href": "http://google.com",
+      "text": "자세히 보기"      
+    }
+  },
+  {
+    "type": "Tblog",
+    "name": "MsingleCrop",
+    "props": { 
+      "image": "http://topclass.chosun.com/news_img/1701/1701_078.jpg",
+      "title": "블로그 싱글아이템 크롭형",
+      "content": "블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형블로그 싱글아이템 크롭형"      
+    }
+  },
+  {
+    "type": "Tblog",
+    "name": "MdoubleCrop",
+    "props": { 
+      "childs":[
+        {
+          "image": "http://topclass.chosun.com/news_img/1701/1701_078.jpg",
+          "title": "블로그 더블아이템  크롭형",
+          "content": "메타데이터1메타데이터1 메타데이터3메타데이터1메타데이터1 메타데이터3메타데이터1메타데이터1 메타데이터3 "
+        },
+        {
+          "image": "http://topclass.chosun.com/news_img/1701/1701_078.jpg",
+          "title": "블로그 더블아이템  크롭형",
+          "content": "메타데이터1메타데이터1메타데이터3"
+        }
+      ]
+     }
+  }
+]
+</code>
+</pre>
+## 주요 디렉토리/파일 구조
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### src/layouts
 
-### `yarn build`
+웹페이지 UI의 레이아웃 콤포넌트들
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### src/views
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+레이아웃의 Contents 영역에 렌더링 될 뷰페이지들(아이템 콤포넌트의 컨테이너 역할)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### src/components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+view에서 비동기적으로 로드하여 렌더링하는 아카이브 아이템 단위의 콤포넌트들
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
