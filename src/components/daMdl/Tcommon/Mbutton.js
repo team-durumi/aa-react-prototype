@@ -14,9 +14,9 @@ export default class Mbutton extends Component {
 
   render() {
     return (
-      <div classNmae="daMdl Tcommon Mbutton">
-        <div classNmae="inner">
-          <a classNmae="button is-primary" href={this.props.data.href}>{this.props.data.text}</a>
+      <div className="daMdl Tcommon Mbutton">
+        <div className="inner">
+          <a className="button is-primary" href={this.props.data.href}>{this.props.data.text}</a>
         </div>
       </div>
     );

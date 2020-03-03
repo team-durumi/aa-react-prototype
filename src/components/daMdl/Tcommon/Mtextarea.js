@@ -13,7 +13,7 @@ export default class Mtextarea extends Component {
 
   render() {
     return (
-      <div classNmae="daMdl Tcommon Mtextarea">
+      <div className="daMdl Tcommon Mtextarea">
         <p>{this.props.data.content}</p>
       </div>
     );

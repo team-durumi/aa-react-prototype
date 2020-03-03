@@ -26,8 +26,8 @@ export default class MdoubleCrop extends Component {
     return (
       <div className="daMdl Tblog MdoubleCrop">
         <ul className="inner">
-          {this.props.data.childs.map(child => (
-          <li>
+          {this.props.data.childs.map((child, i) => (
+          <li key={i}>
             <div className="thumb"><img src={child.image} alt={child.title}/></div>
             <div className="conA">
               <dl className="meta">

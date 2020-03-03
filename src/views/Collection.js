@@ -55,7 +55,7 @@ export default class Collection extends Component {
           {collection.map(function(item, i){
             ItemType = React.lazy(() => import('../components/daMdl/'+item.type+'/'+item.name+'.js'));
             return (
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Loading...</div>} key={i}>
                 <ItemType data={item.props}/>
               </Suspense>
             );

@@ -15,11 +15,11 @@ export default class MsingleHor extends Component {
 
   render() {
     return (
-      <div class="daMdl Tblog MsingleHor">
-        <div class="inner">
-          <div class="thumb"><img src={this.props.data.image} alt={this.props.data.title}/></div>
-          <div class="conA">
-            <dl class="meta">
+      <div className="daMdl Tblog MsingleHor">
+        <div className="inner">
+          <div className="thumb"><img src={this.props.data.image} alt={this.props.data.title}/></div>
+          <div className="conA">
+            <dl className="meta">
               <dt>{this.props.data.title}</dt>
               <dd>{this.props.data.content}</dd>
             </dl>
