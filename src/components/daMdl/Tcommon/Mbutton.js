@@ -16,7 +16,7 @@ export default class Mbutton extends Component {
     return (
       <div className="daMdl Tcommon Mbutton">
         <div className="inner">
-          <a className="button is-primary" href={this.props.data.href}>{this.props.data.text}</a>
+          <a className="btn02 btn02_01" href={this.props.data.href}>{this.props.data.text}</a>
         </div>
       </div>
     );

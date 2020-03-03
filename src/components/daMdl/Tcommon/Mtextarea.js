@@ -14,7 +14,7 @@ export default class Mtextarea extends Component {
   render() {
     return (
       <div className="daMdl Tcommon Mtextarea">
-        <p>{this.props.data.content}</p>
+        <div className="inner">{this.props.data.content}</div>
       </div>
     );
   }

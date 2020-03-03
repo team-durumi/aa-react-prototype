@@ -50,7 +50,7 @@ export default class Collection extends Component {
       var ItemType = null;
 
       return (
-        <div className="container daCol">
+        <div className="daCol">
 
           {collection.map(function(item, i){
             ItemType = React.lazy(() => import('../components/daMdl/'+item.type+'/'+item.name+'.js'));
