@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Contents view="Collection"/>
+      <Contents view="CollectionBoot"/>
       <Footer/>
     </div>
   );

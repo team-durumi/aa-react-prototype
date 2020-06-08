@@ -2,7 +2,7 @@
 import React, { Suspense, lazy, Component} from 'react';
 import '../css/da-objects.css';
 
-export default class Collection extends Component {
+export default class CollectionBoot extends Component {
 
   constructor(props) {
     super(props);
@@ -17,7 +17,7 @@ export default class Collection extends Component {
 
   //API 호출
   componentDidMount() {
-    fetch("/dummy/Collection.json")
+    fetch("/dummy/CollectionBoot.json")
       .then(res => res.json())
       .then(
         (result) => {
@@ -53,7 +53,7 @@ export default class Collection extends Component {
         <div className="daCol">
 
           {collection.map(function(item, i){
-            ItemType = React.lazy(() => import('../components/daMdl/'+item.type+'/'+item.name+'.js'));
+            ItemType = React.lazy(() => import('../components/daMdlBoot/'+item.type+'/'+item.name+'.js'));
             return (
               <Suspense fallback={<div>Loading...</div>} key={i}>
                 <ItemType data={item.props}/>
